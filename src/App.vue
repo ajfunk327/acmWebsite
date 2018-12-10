@@ -1,12 +1,18 @@
 <template>
   <v-app id="app">
     <router-view/>
+    <Feeter></Feeter>
   </v-app>
 </template>
 
 <script>
+import Feeter from '@/components/Feeter';
+
 export default {
   name: 'App',
+  components: {
+    Feeter,
+  },
 };
 </script>
 
